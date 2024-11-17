@@ -106,18 +106,20 @@ h2 {
     width: 50%;
   }
   
-  /* Media query para telas menores (ex: smartphones) */
-  @media (max-width: 768px) {
-    .container__conteudo {
-      flex-direction: column; /* Empilha os elementos em uma coluna */
-    }
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    /* ... suas regras para telas menores ... */
+  }
   
-    .container__imagem-robo{
-        max-width: 100%;
-        height: auto;
-        object-fit: contain;
-}
-    .container__informacoes {
-      width: 100%; /* Faz com que cada elemento ocupe 100% da largura */
+  /* Estilos para telas maiores */
+  @media (min-width: 769px) {
+    /* ... suas regras para telas maiores ... */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .container__imagem-robo {
+      width: 30%; /* Ajuste a largura conforme necessário */
     }
   }
+  
